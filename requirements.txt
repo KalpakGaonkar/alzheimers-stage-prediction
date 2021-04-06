@@ -134,8 +134,6 @@ termcolor==1.1.0
 terminado==0.8.3
 testpath==0.4.4
 threadpoolctl==2.1.0
-torch==1.4.0+cpu
-torchvision==0.5.0+cpu
 tornado==6.0.4
 traitlets==4.3.3
 typed-ast==1.4.1
