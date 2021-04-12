@@ -13,7 +13,7 @@ from keras.models import load_model
 from keras.preprocessing import image
 
 # Flask utils
-from flask import Flask, redirect, url_for, request 
+from flask import Flask, redirect, url_for, request, jsonify
 from werkzeug.utils import secure_filename
 from gevent.pywsgi import WSGIServer
 
@@ -42,7 +42,7 @@ with open(CLASS_LAELS_PATH, 'r') as fr:
 @app.route('/', methods=['GET'])
 def index():
     # Main page
-    return 'Hello world'
+    return jsonify('Hello world')
 
 
 @app.route('/predict', methods=['GET', 'POST'])
@@ -70,7 +70,7 @@ def upload():
         
         result = labels[preds[0]]
         
-        return json.dumps(result)
+        return jsonify(result)
     return None
 
 def model_predict(img_path, model):
