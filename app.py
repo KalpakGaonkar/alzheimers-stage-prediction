@@ -42,7 +42,7 @@ with open(CLASS_LAELS_PATH, 'r') as fr:
 @app.route('/', methods=['GET'])
 def index():
     # Main page
-    return jsonify('Hello world')
+    return jsonify({"response":"Hello world"})
 
 
 @app.route('/predict', methods=['GET', 'POST'])
