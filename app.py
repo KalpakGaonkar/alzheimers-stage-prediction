@@ -26,7 +26,7 @@ CORS(app)
 
 
 # Model saved with Keras model.save()
-MODEL_PATH = 'assets/models/best_weights.hdf5'
+MODEL_PATH = 'assets/models/alzheimers.h5'
 
 # Load your trained model
 model = load_model(MODEL_PATH)
