@@ -42,7 +42,7 @@ with open(CLASS_LAELS_PATH, 'r') as fr:
 @app.route('/', methods=['GET'])
 def index():
     # Main page
-    return jsonify({"response":"Hello world"})
+    return "<h1>Welcome to alzheimers stage prediction</h1>"
 
 
 @app.route('/predict', methods=['GET', 'POST'])
