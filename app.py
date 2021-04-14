@@ -39,7 +39,7 @@ with open(CLASS_LAELS_PATH, 'r') as fr:
 	json_classes = json.loads(fr.read())
 
 
-@app.route('/', methods=['GET'])
+@app.route('/', methods=['POST'])
 def index():
     # Main page
     return "<h1>Welcome to alzheimers stage prediction</h1>"
