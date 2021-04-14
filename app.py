@@ -26,13 +26,13 @@ CORS(app)
 
 
 # Model saved with Keras model.save()
-MODEL_PATH = 'assets/models/alzheimers.h5'
+MODEL_PATH = 'alzheimers.h5'
 
 # Load your trained model
 model = load_model(MODEL_PATH)
 
 # Path where the classes are stored
-CLASS_LAELS_PATH = 'assets/classes/stage_classes.json'
+CLASS_LAELS_PATH = 'stage_classes.json'
 
 # Read the json
 with open(CLASS_LAELS_PATH, 'r') as fr:
